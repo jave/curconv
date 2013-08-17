@@ -1,0 +1,29 @@
+* Emacs currency conversion
+Now and then I need to convert between different currencies.
+
+curconv.el provides some Emacs functions to do this.
+
+This initial implementation is fairly simple and works like this.
+
+- Get an API key from https://openexchangerates.org/
+- (setq curconv-api-key "my-api-key")
+- (curconv-cache-rates), whenever you want to refresh the rates cache
+- (curconv 5 'SEK 'BTC), converts 5 Swedis Krona to Bitcoin
+
+
+It is meant to be possible to use different providers, but I have only
+implemented openexchangerates. This provider has a nice API but is
+inconvenient in that you need to register in order to get an API key.
+
+Suggestions for more convenient providers are welcome.
+
+
+** notes for openexchangerates
+https://openexchangerates.org/
+it also have bitcoin rates!
+
+https://openexchangerates.org/quick-start
+http://openexchangerates.org/api/latest.json?app_id=get-your-own-api-key
+http://openexchangerates.org/api/currencies.json?app_id=get-your-own-api-key
+
+https://openexchangerates.org/documentation#how-to-use
