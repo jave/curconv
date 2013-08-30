@@ -27,3 +27,6 @@ http://openexchangerates.org/api/latest.json?app_id=get-your-own-api-key
 http://openexchangerates.org/api/currencies.json?app_id=get-your-own-api-key
 
 https://openexchangerates.org/documentation#how-to-use
+
+** another backend
+http://www.google.com/ig/calculator?hl=en&q=1USD%3D%3FCAD
